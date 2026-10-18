@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Agali Basavaraj | Software Engineer</title>
+<meta name="description" content="Portfolio of Agali Basavaraj: Java, Python, SQL, Spring Boot, REST APIs, secure coding and testing.">
+<style>
+:root{--bg:#f4f7fc;--fg:#0e1726;--muted:#52627a;--card:#fff;--line:#d8e1ee;--a:#2563eb;--b:#7c3aed;--chip:#e7eefb;--sh:0 8px 30px rgba(20,40,90,.08);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#080d16;--fg:#e9eff8;--muted:#9aabc3;--card:#101a29;--line:#22334a;--a:#6aa8ff;--b:#b794ff;--chip:#18283e;--sh:0 8px 30px rgba(0,0,0,.45)}}
+:root[data-theme="dark"]{--bg:#080d16;--fg:#e9eff8;--muted:#9aabc3;--card:#101a29;--line:#22334a;--a:#6aa8ff;--b:#b794ff;--chip:#18283e;--sh:0 8px 30px rgba(0,0,0,.45)}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(70px + env(safe-area-inset-top,0px))}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);background:var(--card);z-index:30}
+a{color:var(--a)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--card) 85%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+#bar{position:absolute;left:0;bottom:-1px;height:3px;width:0;background:linear-gradient(90deg,var(--a),var(--b))}
+nav{max-width:1040px;margin:0 auto;padding:10px 20px;display:flex;gap:4px;align-items:center;overflow-x:auto;white-space:nowrap}
+nav b{margin-right:auto}
+nav a{text-decoration:none;color:var(--muted);font-size:.9rem;padding:6px 10px;border-radius:8px}
+nav a:hover,nav a.on{color:var(--a);background:var(--chip)}
+#theme{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:8px;padding:6px 10px;cursor:pointer}
+main,footer{max-width:1040px;margin:0 auto;padding:0 20px}
+.hero{position:relative;padding:70px 0 30px;overflow:hidden}
+#cv{position:absolute;inset:0;width:100%;height:100%;z-index:-1;opacity:.55}
+.pill{display:inline-flex;gap:8px;align-items:center;background:var(--chip);border-radius:999px;padding:4px 12px;font-size:.85rem;margin-bottom:14px}
+.pill i{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.25)}
+h1{font-size:clamp(2.4rem,8vw,4.4rem);line-height:1.04;margin:0 0 10px;letter-spacing:-.03em}
+.g{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:clamp(1.1rem,3vw,1.5rem);font-weight:600;margin:0 0 14px;min-height:1.7em}
+#rot{transition:opacity .3s}
+.lead{max-width:660px;margin:0 0 22px;color:var(--muted);font-size:1.05rem}
+.btns{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 18px;border:1px solid var(--a);border-radius:10px;text-decoration:none;font-weight:600;font-size:.95rem;font-family:inherit;background:transparent;color:var(--a);cursor:pointer;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.f{background:linear-gradient(90deg,var(--a),var(--b));border-color:transparent;color:#fff}
+.bento{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:30px}
+.stat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--sh)}
+.stat b{display:block;font-size:2.1rem;line-height:1.1}
+.stat span{color:var(--muted);font-size:.82rem}
+section{padding:36px 0}
+h2{font-size:1.55rem;margin:0 0 18px;display:flex;gap:12px;align-items:center}
+h2::after{content:"";flex:1;height:1px;background:var(--line)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:14px}
+.card{position:relative;background:var(--card);border:1px solid var(--line);border-radius:16px;padding:18px 20px;box-shadow:var(--sh);overflow:hidden;transition:transform .2s,border-color .2s}
+.card::after{content:"";position:absolute;inset:0;background:radial-gradient(260px circle at var(--mx,50%) var(--my,0),color-mix(in srgb,var(--a) 16%,transparent),transparent 70%);opacity:0;transition:opacity .25s;pointer-events:none}
+.card:hover{transform:translateY(-3px);border-color:var(--a)}.card:hover::after{opacity:1}
+.card h3{margin:0 0 4px;font-size:1.05rem}
+.meta{color:var(--muted);font-size:.87rem;margin:0 0 8px}
+.card ul{margin:8px 0 0;padding-left:18px}.card li{margin-bottom:6px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}
+.chips span{background:var(--chip);border-radius:999px;padding:2px 10px;font-size:.8rem}
+.tl{position:relative;padding-left:26px;display:grid;gap:14px}
+.tl::before{content:"";position:absolute;left:7px;top:6px;bottom:6px;width:2px;background:linear-gradient(var(--a),var(--b))}
+.tl .card::before{content:"";position:absolute;left:-26px;top:22px;width:14px;height:14px;border-radius:50%;background:var(--bg);border:3px solid var(--a)}
+.tl .card{overflow:visible}
+.fl{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+.fl button{border:1px solid var(--line);background:var(--card);color:var(--fg);border-radius:999px;padding:6px 14px;cursor:pointer;font:inherit;font-size:.88rem}
+.fl button.on{background:var(--a);border-color:var(--a);color:#fff}
+.hide{display:none}
+.demo{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.w{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:10px}
+.w div{background:var(--chip);border-radius:12px;padding:10px 12px}.w b{display:block;font-size:1.3rem}
+.demo label{font-size:.85rem;color:var(--muted)}
+.demo select,.demo code{font:inherit;background:var(--chip);color:var(--fg);border:1px solid var(--line);border-radius:8px;padding:5px 8px;word-break:break-all}
+.demo code{display:block;margin:6px 0 10px;font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.78rem}
+#log{list-style:none;margin:0;padding:0;font:.82rem/1.5 ui-monospace,Menlo,Consolas,monospace;max-height:260px;overflow:auto}
+#log li{padding:5px 8px;border-left:3px solid var(--line);margin-bottom:5px;background:var(--chip);border-radius:0 8px 8px 0}
+#log li.ok{border-color:#22c55e}#log li.re{border-color:var(--a)}#log li.er{border-color:#ef4444}
+.note{color:var(--muted);font-size:.88rem}
+.rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}.rv.in{opacity:1;transform:none}
+#up{position:fixed;right:18px;bottom:calc(18px + env(safe-area-inset-bottom,0px));width:42px;height:42px;border-radius:50%;border:0;background:var(--a);color:#fff;cursor:pointer;opacity:0;pointer-events:none;transition:opacity .2s}
+#up.s{opacity:1;pointer-events:auto}
+footer{padding:28px 20px 44px;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line);margin-top:24px}
+@media (max-width:720px){.bento{grid-template-columns:1fr 1fr}.demo{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+@media print{header,#up,.fl,#cv{display:none}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<header><nav><b>AB<span class="g">.</span></b>
+<a href="#about">About</a><a href="#skills">Skills</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#demo">Live demo</a><a href="#education">Education</a><a href="#contact">Contact</a>
+<button id="theme" type="button" aria-label="Toggle light or dark theme">◐</button></nav><div id="bar"></div></header>
+<main>
+<div class="hero"><canvas id="cv"></canvas>
+<span class="pill"><i></i>Available immediately · Open to relocate</span>
+<h1>Hi, I’m <span class="g">Agali Basavaraj</span></h1>
+<p class="role"><span id="rot">Backend Developer</span></p>
+<p class="lead">Computer Science graduate (B.E., 2026) with two 2026 internships in backend development and cybersecurity. I build secure, reliable software, then test and document it carefully.</p>
+<div class="btns"><a class="btn f" href="#demo">Try the ledger demo</a><a class="btn" href="#projects">Projects</a><a class="btn" href="https://github.com/agalibasavaraj">GitHub</a><a class="btn" href="https://linkedin.com/in/agali-basavaraj-7a5455283">LinkedIn</a><button class="btn" id="copy" type="button" data-email="agalibasavaraj06@gmail.com">Copy email</button></div>
+<div class="bento">
+<div class="stat"><b data-n="20" data-s="%">0</b><span>faster response across 5+ production REST APIs</span></div>
+<div class="stat"><b data-n="85" data-s="–90%">0</b><span>accuracy, plant disease detection pipeline</span></div>
+<div class="stat"><b data-n="2" data-s="">0</b><span>internships: backend and cybersecurity</span></div>
+<div class="stat"><b data-n="7.19" data-s="" data-d="2">0</b><span>CGPA, B.E. Computer Science</span></div>
+</div></div>
+
+<section id="about" class="rv"><h2>About</h2>
+<p>I tuned SQL to cut API response time by 20%, applied secure-coding and system-hardening fixes from code review, and ran structured vulnerability assessments with severity and remediation notes. I work daily with developers and QA in Agile teams, follow review and quality processes, and learn new tools quickly.</p></section>
+
+<section id="skills" class="rv"><h2>Skills</h2><div class="grid" id="sk"></div></section>
+
+<section id="experience" class="rv"><h2>Experience</h2><div class="tl">
+<div class="card"><h3>Software Developer Intern · Skyllx Technologies</h3><p class="meta">Feb 2026 – Jun 2026</p><ul>
+<li>Cut response time 20% across 5+ production REST APIs by profiling endpoints and rewriting slow SQL queries.</li>
+<li>Reconfigured Jenkins CI/CD pipelines in a Git-based process, reducing deployment failures and release delays.</li>
+<li>Traced recurring React/JavaScript defects to their root causes and documented fixes in bug reports that later interns used as a reference.</li>
+<li>Worked daily with backend, frontend, QA and project stakeholders in an Agile team, communicating status and risks clearly.</li></ul></div>
+<div class="card"><h3>Cybersecurity Intern · VOIS &amp; Vodafone Idea Foundation</h3><p class="meta">Mar 2026 – May 2026</p><ul>
+<li>Applied secure-coding and system-hardening fixes identified during code review, reducing attack surface.</li>
+<li>Ran structured vulnerability assessments in simulated environments, logging findings with severity and remediation notes for engineering teams.</li></ul></div>
+</div></section>
+
+<section id="projects" class="rv"><h2>Projects</h2>
+<div class="fl"><button class="on" data-f="all" type="button">All</button><button data-f="backend" type="button">Backend</button><button data-f="security" type="button">Security</button><button data-f="ai" type="button">AI / ML</button></div>
+<div class="grid" id="pl">
+<div class="card" data-t="backend security"><h3>Secure Payments Ledger &amp; Dashboard</h3><p class="meta">Java · Spring Boot · PostgreSQL · React · Tailwind CSS · JWT · Docker</p><ul>
+<li>Atomic wallet transfers with an append-only double-entry ledger, ordered pessimistic locks to avoid deadlocks, and Idempotency-Key handling to prevent double debits.</li>
+<li>JWT authentication, account lockout, role-based access, fraud rules and audit logging mapped to the OWASP Top 10, with tests for idempotent retries, 409 on payload mismatch, velocity-rule blocking (403) and protected routes.</li></ul>
+<p><a href="#demo">Try the simulation ↓</a> · <a href="https://github.com/agalibasavaraj/Secure-Payments-Ledger-Dashboard">GitHub →</a></p></div>
+<div class="card" data-t="ai backend"><h3>GitHub Issue Triager</h3><p class="meta">Generative AI · Prompt Engineering · LLM API Integration · GitHub API</p><p>A generative AI web app that pulls issues via the GitHub API, classifies each by category and priority using prompt design, and drafts maintainer replies.</p><p><a href="https://epistolary-ai-scribe.lovable.app">Live demo →</a></p></div>
+<div class="card" data-t="ai"><h3>Smart Plant Health Monitoring System</h3><p class="meta">Python · Machine Learning · Computer Vision · Model Evaluation</p><p>A Python ML pipeline that detects plant diseases from images, reaching 85–90% accuracy after debugging and tuning the data preprocessing.</p><p><a href="https://plant-health-monitoring-system.vercel.app">Live demo →</a></p></div>
+</div></section>
+
+<section id="demo" class="rv"><h2>Ledger demo: idempotency</h2>
+<div class="card"><p class="note">An in-browser simulation of the behaviour my payments ledger implements. It is not the real backend. Send a transfer, then retry with the same key: the money moves only once. Change the amount but keep the key, and you get a 409.</p>
+<div class="demo"><div>
+<div class="w"><div>Wallet A<b id="ba"></b></div><div>Wallet B<b id="bb"></b></div></div>
+<label for="amt">Amount</label> <select id="amt"><option value="10000">₹100.00</option><option value="25000">₹250.00</option><option value="60000">₹600.00</option></select>
+<label style="display:block;margin-top:10px">Idempotency-Key</label><code id="key"></code>
+<div class="btns"><button class="btn f" id="send" type="button">Send A → B</button><button class="btn" id="nk" type="button">New key</button><button class="btn" id="rs" type="button">Reset</button></div></div>
+<div><label>Request log</label><ul id="log" aria-live="polite"></ul></div></div></div></section>
+
+<section id="education" class="rv"><h2>Education &amp; Simulations</h2><div class="grid">
+<div class="card"><h3>B.E. in Computer Science Engineering</h3><p class="meta">R.L. Jalappa Institute of Technology · 2022 – 2026 · CGPA 7.19</p><p>Certifications: C Programming (Infosys Springboard); Java (Basic), SQL (Basic), Software Engineer (HackerRank).</p></div>
+<div class="card"><h3>Software Engineering · Commonwealth Bank</h3><p class="meta">Forage job simulation</p><p>Completed a simulated software engineering experience, applying debugging, testing and code-review concepts.</p></div>
+<div class="card"><h3>GenAI-Powered Data Analytics · Tata</h3><p class="meta">Forage job simulation</p><p>Completed a simulated data analytics experience on customer data and risk analysis, applying generative AI to business recommendations.</p></div>
+</div></section>
+
+<section id="contact" class="rv"><h2>Contact</h2><p>Let’s talk about internships and entry-level software roles.</p>
+<div class="btns"><a class="btn f" href="mailto:agalibasavaraj06@gmail.com">agalibasavaraj06@gmail.com</a><a class="btn" href="https://linkedin.com/in/agali-basavaraj-7a5455283">LinkedIn</a><a class="btn" href="https://github.com/agalibasavaraj">GitHub</a></div>
+<p class="note" id="cm" role="status"></p></section>
+</main>
+<footer>© Agali Basavaraj · Bangalore, India</footer>
+<button id="up" type="button" aria-label="Back to top">↑</button>
+<script>
+(function(){
+var R=document.documentElement,$=function(s,c){return(c||document).querySelector(s)},$$=function(s,c){return[].slice.call((c||document).querySelectorAll(s))};
+var rm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+function dk(){var t=R.getAttribute("data-theme");return t?t==="dark":matchMedia("(prefers-color-scheme: dark)").matches}
+try{var sv=localStorage.getItem("theme");if(sv)R.setAttribute("data-theme",sv)}catch(e){}
+$("#theme").onclick=function(){var n=dk()?"light":"dark";R.setAttribute("data-theme",n);try{localStorage.setItem("theme",n)}catch(e){}};
+var S={"Programming":["Java","Python","SQL","JavaScript","TypeScript","HTML","CSS","React"],"Backend & APIs":["Spring Boot","REST APIs","HTTP/HTTPS","JSON","JWT","PostgreSQL","Swagger / OpenAPI","Django"],"Testing & Quality":["Structured Testing","JUnit","Mockito","Vitest","Root Cause Analysis","Code Reviews","Technical Documentation","SDLC / STLC","Agile"],"Security":["Secure Coding","System Hardening","Vulnerability Assessment","JWT / BCrypt","OWASP Top 10"],"CI/CD & Tools":["Git / GitHub","Jenkins","Docker","Docker Compose","Azure","AWS","Jira (basics)"],"AI, Data & Fundamentals":["Machine Learning","scikit-learn","TensorFlow","PyTorch","Generative AI","OOP","Data Structures & Algorithms","DBMS"]};
+$("#sk").innerHTML=Object.keys(S).map(function(k){return'<div class="card"><h3>'+k.replace("&","&amp;")+'</h3><div class="chips">'+S[k].map(function(x){return"<span>"+x.replace("&","&amp;")+"</span>"}).join("")+"</div></div>"}).join("");
+$$(".fl button").forEach(function(b){b.onclick=function(){$$(".fl button").forEach(function(x){x.classList.remove("on")});b.classList.add("on");var f=b.getAttribute("data-f");$$("#pl .card").forEach(function(c){c.classList.toggle("hide",f!=="all"&&(c.getAttribute("data-t")||"").indexOf(f)<0)})}});
+$("#copy").onclick=function(){var e=this.getAttribute("data-email"),m=$("#cm");function ok(){m.textContent="Email copied: "+e}function no(){m.textContent="Copy failed. Email: "+e}try{navigator.clipboard.writeText(e).then(ok,no)}catch(x){no()}location.hash="#contact"};
+document.addEventListener("pointermove",function(e){var c=e.target.closest&&e.target.closest(".card");if(!c)return;var r=c.getBoundingClientRect();c.style.setProperty("--mx",(e.clientX-r.left)+"px");c.style.setProperty("--my",(e.clientY-r.top)+"px")});
+var roles=["Backend Developer","Secure Software Engineer","Quality-focused Tester","API Performance Tuner"],ri=0;
+if(!rm)setInterval(function(){var r=$("#rot");r.style.opacity=0;setTimeout(function(){ri=(ri+1)%roles.length;r.textContent=roles[ri];r.style.opacity=1},300)},2600);
+function cnt(el){var n=parseFloat(el.getAttribute("data-n")),s=el.getAttribute("data-s")||"",d=parseInt(el.getAttribute("data-d")||"0",10);if(rm){el.textContent=n.toFixed(d)+s;return}var t0=null;(function st(t){if(!t0)t0=t;var p=Math.min((t-t0)/1200,1);el.textContent=(n*(1-Math.pow(1-p,3))).toFixed(d)+s;if(p<1)requestAnimationFrame(st)})(0)}
+if("IntersectionObserver" in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");io.unobserve(e.target)}})},{threshold:.1});$$(".rv").forEach(function(x){io.observe(x)});var co=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){cnt(e.target);co.unobserve(e.target)}})},{threshold:.6});$$("[data-n]").forEach(function(x){co.observe(x)})}else{$$(".rv").forEach(function(x){x.classList.add("in")});$$("[data-n]").forEach(cnt)}
+var L=$$("nav a"),SC=L.map(function(a){return $(a.getAttribute("href"))});
+function sc(){var y=scrollY,m=R.scrollHeight-innerHeight;$("#bar").style.width=(m>0?y/m*100:0)+"%";$("#up").classList.toggle("s",y>500);var c=-1;SC.forEach(function(s,i){if(s&&s.getBoundingClientRect().top<120)c=i});L.forEach(function(a,i){a.classList.toggle("on",i===c)})}
+addEventListener("scroll",sc,{passive:true});sc();$("#up").onclick=function(){scrollTo({top:0,behavior:rm?"auto":"smooth"})};
+var cv=$("#cv"),cx=cv.getContext("2d"),P=[],W,H;
+function rs(){var r=cv.parentNode.getBoundingClientRect();W=cv.width=r.width;H=cv.height=r.height}
+function col(){return getComputedStyle(R).getPropertyValue("--a").trim()||"#2563eb"}
+function draw(){cx.clearRect(0,0,W,H);var c=col();cx.fillStyle=c;cx.strokeStyle=c;P.forEach(function(p,i){if(!rm){p.x+=p.vx;p.y+=p.vy;if(p.x<0||p.x>W)p.vx*=-1;if(p.y<0||p.y>H)p.vy*=-1}cx.globalAlpha=.8;cx.beginPath();cx.arc(p.x,p.y,1.6,0,6.3);cx.fill();for(var j=i+1;j<P.length;j++){var q=P[j],d=Math.hypot(p.x-q.x,p.y-q.y);if(d<110){cx.globalAlpha=(1-d/110)*.35;cx.beginPath();cx.moveTo(p.x,p.y);cx.lineTo(q.x,q.y);cx.stroke()}}});if(!rm)requestAnimationFrame(draw)}
+rs();for(var i=0;i<55;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35});addEventListener("resize",rs);draw();
+var st,seen,led,key;
+function inr(m){return"₹"+(m/100).toLocaleString("en-IN",{minimumFractionDigits:2,maximumFractionDigits:2})}
+function uid(){return(window.crypto&&crypto.randomUUID)?crypto.randomUUID():"key-"+Math.random().toString(16).slice(2)+Date.now().toString(16)}
+function log(t,k){var li=document.createElement("li");li.className=k;li.textContent=t;$("#log").insertBefore(li,$("#log").firstChild)}
+function ui(){$("#ba").textContent=inr(st.a);$("#bb").textContent=inr(st.b);$("#key").textContent=key}
+function reset(){st={a:50000,b:0};seen={};key=uid();$("#log").innerHTML="";log("Ready. Wallet A holds "+inr(50000)+".","re");ui()}
+$("#send").onclick=function(){var amt=parseInt($("#amt").value,10),k=key,short=k.slice(0,8);
+if(seen[k]){if(seen[k].amt===amt){log("200 Replayed · key "+short+"… · no second debit, stored result returned","re")}else{log("409 Conflict · key "+short+"… already used with "+inr(seen[k].amt)+", payload differs","er")}return}
+if(st.a<amt){log("422 Insufficient funds · balance "+inr(st.a)+", requested "+inr(amt),"er");return}
+st.a-=amt;st.b+=amt;seen[k]={amt:amt};log("201 Created · key "+short+"… · debit A "+inr(amt)+", credit B "+inr(amt),"ok");ui()};
+$("#nk").onclick=function(){key=uid();ui();log("New Idempotency-Key generated","re")};$("#rs").onclick=reset;reset();
+})();
+</script>
+</body>
+</html>
